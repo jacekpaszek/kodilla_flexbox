@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;	
+}
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;	
+}
+
+/*HEADR*/
+header {
+	min-height: 50px;	
+}
+
+header .container {
+	display: flex;	
+	justify-content: flex-end;
+	background-color: #313234;	
+}
+
+header .container .nav {
+	display: flex;
+	margin: 0;
+	padding: 0;	
+}
+
+header ul > li {
+	display: inline-block;
+}
+
+header ul > li > a {
+	line-height: 50px;
+	padding: 0 20px;	
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	cursor: pointer;	
+}
+
+header ul > li:hover {
+	background-color: #4C4E52;
+}
+
+/*JUMBOTRON*/
+.jumbotron {	
+	display: flex;	
+	align-items: center;	
+	justify-content: center;
+	min-height: 400px;	
+	background: url(https://images.unsplash.com/photo-1472214103451-9374bd1c798e?dpr=1&auto=format&fit=crop&h=400&q=80&cs=tinysrgb&crop=&bg=) center/cover;
+	color: #fff;
+}
+
+/*GALLERY*/
+.gallery {	
+	display: flex;
+	align-items: center;	
+	justify-content: center;
+	flex-wrap: wrap;	
+}
+
+.gallery img {		
+	margin: 10px;
+}
+
+/*CARDS*/
+.cards {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;	
+}
+
+.cards .card {
+	margin: 10px;
+	width: 200px;
+	border: 1px solid green;
+	background-color: lightgreen;
+	padding: 10px;
+	box-shadow: 3px 3px grey;
+}
+
+/*FOOTER*/
+footer {
+	background-color: #313234;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+	text-align: center;
+}
+
+footer .copy, footer .address {
+	flex-grow: 1;	
+}
+
+footer .name {
+	flex-grow: 2;	
+	text-transform: uppercase;
+}
